@@ -1,4 +1,12 @@
- import pokemon from '../data/pokemon/pokemon.js';
- console.log(pokemon);
+import App from "./components/App";
 
-document.getElementById('root').appendChild(App());
+ //selectores
+ const play = document.getElementById('play-button');
+
+ //Eventos
+ play.addEventListener("click", () => {
+ }  
+
+
+ 
+ document.getElementById('root').appendChild(App());
