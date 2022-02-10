@@ -2,10 +2,27 @@
 // Para incluir los diferentes sets de cartas podemos _importar_ el archivo
 // JavasSript que contenga el `export` correspondiente...
 //
- import pokemon from '../data/pokemon/pokemon.js';
-
- let data = pokemon;
+import pokemon from '../data/pokemon/pokemon.js';
+let data = pokemon;
 console.log(data);
+
+function aleatorizar(items) {
+  let indexActual = items.length, valorTemporal, indexAleatorio;
+  while (0 !== indexActual) {
+    indexAleatorio = Math.floor(Math.random() * indexActual);
+     indexActual -= 1;
+     valorTemporal = items[indexActual];
+     items[indexActual] = items[indexAleatorio];
+     items[indexAleatorio] = valorTemporal;
+
+   } 
+   return items; 
+ }
+
+
+ aleatorizar(data);
+
+/*
   const App = () => {
       const informacionTarjeta = aleatorizar();
       //Generar HTML
@@ -18,21 +35,25 @@ console.log(data);
     cara.classList = "cara";
     sello.classList = "sello";
   //adjuntar cartas en las secciones 
-  section.appendChild(tarjeta); 
+  
   });
   };
+  */
 
   //una funciôn para generar un aleatorio
   // Colocar elementos en distintas posiciones de un array
-
+/*
   const aleatorizar = () => {
-    const informacionTarjeta = data();
-    informacionTarjeta.sort(() => Math.random() - 0.5);
+    const tarjetaData = data;
+    tarjetaData.Math.floor(Math.random() * 0.5);
+    console.log(tarjetaData);
   };
 
   aleatorizar();
   
-  
+  */
+
+
 
 
 
