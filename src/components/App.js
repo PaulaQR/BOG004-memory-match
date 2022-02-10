@@ -14,7 +14,7 @@
     return el;
   
   };
-l  
+
   //una funciôn para generar un aleatorio
   // Colocar elementos en distintas posiciones de un array
 
