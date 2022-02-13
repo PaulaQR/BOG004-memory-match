@@ -3,24 +3,70 @@
 // JavasSript que contenga el `export` correspondiente...
 //
 import pokemon from '../data/pokemon/pokemon.js';
+let items = [];
 let data = pokemon;
-console.log(data);
 
-function aleatorizar(items) {
-  let indexActual = items.length, valorTemporal, indexAleatorio;
-  while (0 !== indexActual) {
-    indexAleatorio = Math.floor(Math.random() * indexActual);
-     indexActual -= 1;
-     valorTemporal = items[indexActual];
-     items[indexActual] = items[indexAleatorio];
-     items[indexAleatorio] = valorTemporal;
+//Generando tablero
+const generateBoard = () =>{
+  let board = document.getElementById('board');
+  let cards = [];
+  for (j = 0; j<2; j++){
+    for(let i = 0; i < 9; i ++){
+      
+      cards.push(`
+      <div class='container-card'(${i})'>
+      <div class="card" id="card${i}">
+      <div class="back" id="back${i}">
+      <img src="${data.items[i].image}" alt="pokemon"/>
+      </div>
+      </div>
+      <div class="face">
+            </div>
+          </div>
+        </div>
+    `)
+      console.log(data.items[i].image)
+    }
+    }
+  
+  export default App;
 
-   } 
-   return items; 
- }
 
 
- aleatorizar(data);
+
+// function mezclar (array) {
+//   //Recorre el array de atras hacia adelante 
+//   for (let i = array.length - 1; i> 0; i--) {
+//   //Elije un indice aleatorio antes del elemento actual 
+//   let j = Math.floor(Math.random() * (i+1));
+//     //Intercambia [a,b] por [b,a]
+//     [array[i], array[j]] = [array[j], array[i]];
+//   }
+//   return mezclar
+// }
+
+
+
+
+// function (data) {
+//   let data = pokemon;
+//   let indexActual = data.length, valorTemporal, indexAleatorio;
+//   while (0 !== indexActual) {
+//     indexAleatorio = Math.floor(Math.random() * indexActual);
+//      indexActual -= 1;
+//      valorTemporal = data[indexActual];
+//      data[indexActual] = data[indexAleatorio];
+//      data[indexAleatorio] = valorTemporal;
+
+//    } 
+//    return data; 
+//  }
+
+
+//  aleatorizar(data);
+
+
+ 
 
 /*
   const App = () => {
@@ -59,4 +105,3 @@ function aleatorizar(items) {
 
 
 
-export default App;

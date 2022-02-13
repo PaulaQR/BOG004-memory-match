@@ -1,17 +1,15 @@
 import App from './components/App.js';
-  const section = document.querySelector('section');  
- 
+
  const play = document.getElementById('play-button');
 
- play.location("click", () => {
   
-  
-document.getElementById("container").style.display = "none";
-document.getElementById("screen-two").style.display = "block";
-document.getElementById("screen-three").style.display = "block";
+ play.addEventListener("click", () => {
 
-
- })  
-
+  document.body.innerHTML =  ;
+    
+  document.getElementById("screen-two").style.display = "none";
+ document.getElementById("container").style.display = "block";
  
- document.getElementById('root').appendChild(App());
+ 
+});
+document.getElementById('board').appendChild(App())
