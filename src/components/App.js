@@ -3,13 +3,14 @@
 // JavasSript que contenga el `export` correspondiente...
 //
 import pokemon from '../data/pokemon/pokemon.js';
-let items = [];
+
 let data = pokemon;
 
-//Generando tablero
+//Generate Board 
 const generateBoard = () =>{
-  let board = document.getElementById('board');
-  let cards = [];
+  const items= document.createElement('section');
+  items.contains = []
+  let cards = []
   for (j = 0; j<2; j++){
     for(let i = 0; i < 9; i ++){
       
@@ -27,10 +28,15 @@ const generateBoard = () =>{
     `)
       console.log(data.items[i].image)
     }
+    data.items.sort(() =>Math.random()-0.5)
+    items.innerHTML = cards.join("")
     }
-  
-  export default App;
+    return items
+  }
 
+  generateBoard();
+}
+  export {generateBoard}
 
 
 

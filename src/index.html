@@ -10,35 +10,41 @@
   </head>
   <body> 
     
-    <main class="container">
+    <main class="main-container">
 
       <header>
         <h1>MEMORY MATCH</h1>
         <h2>POKEMON</h2>
       </header> 
       
-       <section id="root" class="container-button">
+       <section  class="container-button">
             
           <img class= "container-image" src="./images/picachu_principal.png" alt="imagen-picachu">
-          <button type="button"  class="play-button" id="play-button"> JUGAR </button>    
+          <button type="button"  class="play" id="play"> JUGAR </button>    
       </section>  
       
 
       <section id="screen-two" class="screen-two" style="display: none" >  
-        <div id="board"></div>
-        
-     
-      </section>
+        <section class="cards">
+          <main class="board" id="board">
+           <div class="container-card">
+            <div class="back">
+             </div>
+      </div> 
+    </section> 
+    
+  </section>
+  
+  <!-- <section id="screen-three" class="screen-three" style="display: none" >  
+    <div id="end-container">
+      <p id="won-lost"></p>
+    </div>
+    <button type="submit" class="play-again" id="play-button"> VOLVER A JUGAR </button>
+  </section> 
+   -->
+  
 
-      <section id="screen-three" class="screen-three" style="display: none" >  
-         <div id="end-container">
-           <p id="won-lost"></p>
-         </div>
-         <button type="submit" class="play-again" id="play-button"> VOLVER A JUGAR </button>
-      </section> 
-      
-      
-    </main>
+</main>
 
     <footer>
       <p>Realizado por Roxy Solano & Paula Quintero </p>

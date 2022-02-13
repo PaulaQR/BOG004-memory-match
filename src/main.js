@@ -1,15 +1,14 @@
-import App from './components/App.js';
+import  { generateBoard } from './components/App.js';
 
- const play = document.getElementById('play-button');
+const play= document.getElementById('play');
+const mainContainer= document.getElementById('main-container').style.display= 'block';
+const screenTwo = document.getElementById('screen-two').style.display= 'none';
 
-  
- play.addEventListener("click", () => {
+  play.addEventListener('click', ()=>{
+     mainContainer.document.getElementById('container').style.display= 'none';
+     screenTwo.document.getElementById('screen-two').style.display= 'block';
 
-  document.body.innerHTML =  ;
-    
-  document.getElementById("screen-two").style.display = "none";
- document.getElementById("container").style.display = "block";
- 
+
  
 });
-document.getElementById('board').appendChild(App())
+document.getElementById('screen-two').appendChild(generateBoard())
