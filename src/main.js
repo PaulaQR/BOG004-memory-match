@@ -5,7 +5,7 @@ const mainContainer= document.getElementById('main-container').style.display= 'b
 const screenTwo = document.getElementById('screen-two').style.display= 'none';
 
   play.addEventListener('click', ()=>{
-     mainContainer.document.getElementById('container').style.display= 'none';
+     mainContainer.document.getElementById('main-container').style.display= 'none';
      screenTwo.document.getElementById('screen-two').style.display= 'block';
 
 
