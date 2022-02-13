@@ -64,7 +64,7 @@ const generateBoard = () =>{
         }
         
         generateBoard();
-    
+      });
         
         export {generateBoard}
 
