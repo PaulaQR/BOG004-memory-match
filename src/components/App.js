@@ -62,9 +62,9 @@ const generateBoard = () =>{
             }
           }, 1000);
         }
+      }
         
         generateBoard();
-      });
         
         export {generateBoard}
 
