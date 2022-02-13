@@ -45,7 +45,7 @@ header h1{
   
 }
 
-.play-button{
+.playButton{
   height: 60px;
   width: 250px;
   margin: 10px auto;
@@ -71,7 +71,7 @@ header h1{
     
   }
   
-  .play-button{
+  .playButton{
     width: 150px;
     letter-spacing: 8px;
   }
@@ -89,7 +89,7 @@ header h1{
     
   }
   
-  .play-button{
+  .playButton{
     width: 100px;
     height: 40px;
     letter-spacing: 5px;
@@ -112,7 +112,7 @@ header h1{
     
   }
   
-  .play-button{
+  .playButton{
     width: 80px;
     height: 30px;
     letter-spacing: 5px;

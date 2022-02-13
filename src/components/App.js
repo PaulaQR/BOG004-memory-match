@@ -59,4 +59,4 @@ function aleatorizar(items) {
 
 
 
-export default App;
+// export default App;
