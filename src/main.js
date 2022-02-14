@@ -14,4 +14,5 @@ function playGame() {
  
 }
 
-// document.getElementById('screen-two').appendChild(generateBoard())
+
+ document.getElementById('screen-two').appendChild(generateBoard())

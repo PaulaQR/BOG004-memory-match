@@ -60,6 +60,28 @@ header h1{
   cursor: pointer;
 }
 
+/* Segunda pantalla */
+.container-card{
+  background-color: #316E76;
+  width: 60%;
+  height: auto ;
+  margin: 80px auto 30px auto;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:flex-start;
+}
+
+.container-card img{
+  width: 95px;
+}
+
+
+
+
+
+
 @media screen and (max-width: 1024px) {
  
 }
@@ -80,6 +102,7 @@ header h1{
     font-size: 25px;
   }
 }
+
 
 
 @media screen and (max-width: 425px) {
