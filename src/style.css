@@ -61,20 +61,29 @@ header h1{
 }
 
 /* Segunda pantalla */
+
+  section .screen-two{
+    width: 124.63px;
+    height: 171.93px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 .container-card{
   background-color: #316E76;
-  width: 60%;
+  width: 90%;
   height: auto ;
   margin: 80px auto 30px auto;
   border-radius: 20px;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content:space-between;
-  align-items:flex-start;
+
+  
 }
 
 .container-card img{
-  width: 95px;
+  align-items: center;
+  width: 60px;
 }
 
 

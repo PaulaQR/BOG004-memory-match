@@ -1,4 +1,3 @@
-//
 // Para incluir los diferentes sets de cartas podemos _importar_ el archivo
 // JavasSript que contenga el `export` correspondiente...
 //
@@ -29,6 +28,7 @@ const generateBoard = () =>{
           // if (i % 2 == 1) {
             //   items.splice( 0, 1)
       console.log(data.items[i].image)
+      console.log(data.items[i].id)
     }
     data.items.sort(() =>Math.random()-0.5)
     items.innerHTML = cards.join("")
@@ -68,11 +68,6 @@ const generateBoard = () =>{
   //       }
       
         
-
-
-
-
-
 
 
 
