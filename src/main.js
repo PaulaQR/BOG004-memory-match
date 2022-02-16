@@ -1,4 +1,5 @@
 import  { generateBoard } from './components/App.js';
+document.getElementById('screen-two').appendChild(generateBoard())
 const playButton = document.getElementById('playButton')
 playButton.addEventListener('click', playGame);
 
@@ -15,4 +16,35 @@ function playGame() {
 }
 
 
- document.getElementById('screen-two').appendChild(generateBoard())
+// CLick 
+var filppedCard = false;
+var firstCard, secondCard;
+const cards = document.querySelectorAll(".card");
+function filpCard() {
+    this.classList.add("flip");
+    if (!filppedCard) {
+        filppedCard = true;
+        firstCard = this;
+    } else {
+        filppedCard = false;
+        secondCard = this;
+        console.log({ firstCard, secondCard });
+        console.log(firstCard.dataset.pokemon);
+        console.log(secondCard.dataset.pokemon);
+
+        if (firstCard.dataset.pokemon === secondCard.dataset.pokemon){
+            firstCard.removeEventListener('click' , filpCard);
+            secondCard.removeEventListener('click' , filpCard);
+        } else {
+            setTimeout(() => {
+                firstCard.classList.remove('flip');
+                secondCard.classList.remove('flip');
+            }, 1500 );
+            
+        }
+
+    }
+}
+cards.forEach((card) =>
+    card.addEventListener("click", filpCard)
+);
