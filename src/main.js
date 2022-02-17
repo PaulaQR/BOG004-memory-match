@@ -1,4 +1,7 @@
 import  {generateBoard} from './components/App.js';
+document.getElementById('screen-two').appendChild(generateBoard())
+
+
 const playButton = document.getElementById('playButton')
 playButton.addEventListener('click', playGame);
 
@@ -12,8 +15,5 @@ function playGame() {
     screen2.style.display = 'block';
     screen3.style.displya = 'none';
   }
- 
-}
+};
 
-
- document.getElementById('screen-two').appendChild(generateBoard())

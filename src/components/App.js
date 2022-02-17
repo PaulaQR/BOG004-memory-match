@@ -14,11 +14,12 @@ const generateBoard = () =>{
       for(let i = 0; i < 9; i ++){
       
         cards.push(`
-          <div class='container-card'>
-            <div class="back${i}" id="back${i}">
+          <div id='container-card' class='container-card'>
+            <div class= 'back'>
               <img src="${data.items[i].image}" alt="pokemon-${i}"/>
             </div>
-            <div class="face">
+            <div class='front'>
+              <img src="./images/pokebola.png" alt="front"/>
             </div>
             
           </div>
