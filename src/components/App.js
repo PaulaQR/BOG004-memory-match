@@ -14,16 +14,14 @@ const generateBoard = () =>{
       for(let i = 0; i < 9; i ++){
       
         cards.push(`
-          <div class='container-card'(${i})'>
-          <div class="card" id="card${i}">
-          <div class="back" id="back${i}">
-          <img src="${data.items[i].image}" alt="pokemon"/>
-          </div>
-          </div>
-          <div class="face">
-                </div>
-              </div>
+          <div class='container-card'>
+            <div class="back${i}" id="back${i}">
+              <img src="${data.items[i].image}" alt="pokemon-${i}"/>
             </div>
+            <div class="face">
+            </div>
+            
+          </div>
         `)
           // if (i % 2 == 1) {
             //   items.splice( 0, 1)

@@ -6,7 +6,7 @@
 
 body {
   
-  background-color: #33413F;
+  background-color: #143A3F;
   text-align: center;
   font-family: 'Raleway', sans-serif;
   color: white;
@@ -15,7 +15,7 @@ body {
 
 .main-container {
   background-color: #80547B;
-  width: 60%;
+  width: 70%;
   height: auto;
   margin: 80px auto 30px auto;
   border-radius: 20px;
@@ -62,33 +62,19 @@ header h1{
 
 /* Segunda pantalla */
 
-  section .screen-two{
-    width: 124.63px;
-    height: 171.93px;
-    margin-top: 5px;
-    margin-bottom: 1px;
-    display: flex;
-    flex-wrap: wrap;
-    
+.screen-two{ 
+  width: 1100px;
+  margin: 50px auto 50px auto;
 }
+
 .container-card{
-  background-color: #316E76;
-  width: 90%;
-  height: auto ;
-  margin: 80px auto 30px auto;
+  background-color:aliceblue;
+  display: inline-grid;
+  grid-template-columns: 50px 50px 50px;
   border-radius: 20px;
-
-  
-}
-
-.container-card img{
+  margin: 10px;
   align-items: center;
-  width: 60px;
 }
-
-
-
-
 
 
 @media screen and (max-width: 1024px) {
@@ -137,12 +123,6 @@ header h1{
   
 }
 
-.card-container{
-  display: flex; 
-  flex-wrap: wrap;
-  height: 300px;
-  width: 400px;
-}
 
 
 @media screen and (max-width: 320px) {

@@ -1,4 +1,4 @@
-import  { generateBoard } from './components/App.js';
+import  {generateBoard} from './components/App.js';
 const playButton = document.getElementById('playButton')
 playButton.addEventListener('click', playGame);
 
@@ -9,7 +9,8 @@ function playGame() {
   
   if(screen1.style.display == 'block'){
     screen1.style.display = 'none';
-    screen2.style.display = 'block'
+    screen2.style.display = 'block';
+    screen3.style.displya = 'none';
   }
  
 }
