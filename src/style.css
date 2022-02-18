@@ -51,7 +51,6 @@ header h1{
   margin: 10px auto;
   margin: auto 0;
   border-radius: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15pt;
   font-weight: 800;
   letter-spacing: 0.3cm;
@@ -64,15 +63,24 @@ header h1{
 
 .screen-two{
   margin: auto;
+  font-family: 'Raleway', sans-serif;;
+  
 }
+
+.screen-two h1,h3 {
+letter-spacing: 15px;
+line-height: 40px;
+font-size: 30px;
+}
+
 .container-card{
   background-color:aliceblue;
   border-radius: 30px;
   display: inline-grid;
   margin: 1rem;
   cursor: pointer;
-  width: 119px;
-  height: 90px;
+  width: 91px;
+  height:auto 61px;
   align-content: center;
 }
 .container-card img{
