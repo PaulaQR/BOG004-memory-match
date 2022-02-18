@@ -10,9 +10,9 @@ function playGame() {
   
   if(screen1.style.display == 'block'){
     screen1.style.display = 'none';
-    screen2.style.display = 'block'
+    screen2.style.display = 'block';
+    screen3.style.displya = 'none';
   }
- 
 }
 
 
@@ -28,10 +28,7 @@ function filpCard() {
     } else {
         filppedCard = false;
         secondCard = this;
-        console.log({ firstCard, secondCard });
-        console.log(firstCard.dataset.pokemon);
-        console.log(secondCard.dataset.pokemon);
-
+        
         if (firstCard.dataset.pokemon === secondCard.dataset.pokemon){
             firstCard.removeEventListener('click' , filpCard);
             secondCard.removeEventListener('click' , filpCard);
@@ -41,8 +38,11 @@ function filpCard() {
                 secondCard.classList.remove('flip');
             }, 1500 );
             
+            console.log({ firstCard, secondCard });
+            console.log(firstCard.dataset.pokemon);
+            console.log(secondCard.dataset.pokemon);
         }
-
+        
     }
 }
 cards.forEach((card) =>

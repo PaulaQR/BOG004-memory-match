@@ -14,23 +14,18 @@ const generateBoard = () =>{
       for(let i = 0; i < 9; i ++){
       
         cards.push(`
-          <div class="memory-game">
-          <div class="card" data-pokemon="${data.items[i].id}">
-          <div class="face">
-          <img src="${data.items[i].image}" id=""  alt="Pokémon">
-          </div>
-          <div class="back">
-          <svg width="173" height="126" viewBox="0 0 173 126" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="124.625" height="171.935" rx="18.9262" transform="matrix(-0.000796218 -1 1 -0.000810979 0.0992279 125.689)" fill="#143A3F"/>
-          <ellipse cx="85.9227" cy="62.9777" rx="39.4141" ry="39.7778" fill="white"/>
-          </svg>
-
-
-                </div>
-              </div>
+        <div id='container-card' class='container-card'>
+            <div class= 'back'>
+              <img src="${data.items[i].image}" alt="pokemon-${i}"/>
             </div>
+            <div class='front'>
+              <img src="../images/back.png" alt="front"/>
+            </div>
+            
           </div>
+        
         `)
+        
            
       console.log(data.items[i].image)
       console.log(data.items[i].id)
