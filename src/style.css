@@ -62,32 +62,29 @@ header h1{
 
 /* Segunda pantalla */
 
-  section .screen-two{
-    width: 124.63px;
-    height: 171.93px;
-    margin-top: 5px;
-    margin-bottom: 1px;
-    display: flex;
-    flex-wrap: wrap;
-    
+.screen-two{
+  margin: auto;
 }
 .container-card{
-  background-color: #316E76;
-  width: 90%;
-  height: auto ;
-  margin: 80px auto 30px auto;
-  border-radius: 20px;
-
-  
+  background-color:aliceblue;
+  border-radius: 30px;
+  display: inline-grid;
+  margin: 1rem;
+  cursor: pointer;
+  width: 119px;
+  height: 90px;
+  align-content: center;
 }
-
 .container-card img{
-  align-items: center;
-  width: 60px;
+  width: 75px;
+  height: 60px;
 }
-
-
-
+.front{
+  display: none;
+}
+.back{
+  display: block;
+}
 
 
 
