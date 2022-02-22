@@ -1,20 +1,14 @@
 import  { generateBoard } from './components/App.js';
-document.getElementById('screen-two').appendChild(generateBoard())
-const playButton = document.getElementById('playButton')
-playButton.addEventListener('click', playGame);
 
-function playGame() {
-  let screen1 = document.getElementById('screen-one');
-  let screen2 = document.getElementById('screen-two');
-  let screen3 = document.getElementById('screen-three');
-  
-  if(screen1.style.display == 'block'){
-    screen1.style.display = 'none';
-    screen2.style.display = 'block';
-    screen3.style.displya = 'none';
-  }
-}
-
+//PLAY BUTTON
+document.getElementById("screen-two").style.display = "none"
+document.getElementById('screen-three').style.display = "none";
+const ruta = (document.getElementById("screen-two"))
+const playButton = document.getElementById('playButton');
+playButton.addEventListener("click", () =>{
+    document.querySelector("div").style.display = "none";
+    ruta.style.display = "block";
+});
 
 // CLick 
 var filppedCard = false;
@@ -48,3 +42,5 @@ function filpCard() {
 cards.forEach((card) =>
     card.addEventListener("click", filpCard)
 );
+
+document.getElementById('screen-two').appendChild(generateBoard());

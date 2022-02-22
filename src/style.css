@@ -5,17 +5,21 @@
 }
 
 body {
-  
+  height: 100vh;
+  padding: 1px;
   background-color: #143A3F;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   font-family: 'Raleway', sans-serif;
   color: white;
-
+  
 }
 
 .main-container {
   background-color: #80547B;
-  width: 80%;
+  width: 98%;
+  padding: 45px;
   height: auto;
   margin: 80px auto 30px auto;
   border-radius: 20px;
@@ -26,23 +30,24 @@ body {
 }
 
 h1,h2,h3{
+  
   letter-spacing: 15px;
   line-height: 40px;
   font-size: 30px;
 }
 
 header h1{
-  margin-top: 50px;
+  margin-top: 5px 5px;
 }
 
 .container-button {
-  display: flex;
-  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-bottom: auto;
 }
 
 .container-image{
-  width: 250px;
-  
+  width: 300px;
 }
 
 .playButton{
@@ -62,33 +67,69 @@ header h1{
 
 /* Segunda pantalla */
 
-.screen-two{ 
-  margin: auto;
+.screen-two section{ 
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-gap: 1rem 6rem;
+  perspective: 800px;
+/*  grid-gap para que se separen las tarjetas*/ 
+
 }
 
-.container-card{
-  background-color:aliceblue;
-  border-radius: 30px;
-  display: inline-grid;
-  margin: 1rem;
+
+
+.container-card,
+.card
+.front
+{
   cursor: pointer;
-  width: 119px;
-  height: 90px;
-  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+ 
+
 }
+
+.card{
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  animation: initial 1s;
+}
+
+img{
+  width: 100px;
+}
+
 
 .container-card img{
-  width: 75px;
-  height: 60px;
+  width: 90px;
+  height: 100px;
+  margin-top: 13px;
+} 
+
+.front, .back {
+ height: 130px;
+ width: 200px;
+ position: absolute;
 }
 
 .front{
-  display: none;
+ transform: rotateY(180deg);
+
 }
 
 .back{
-  display: block;
+  
 }
+
+footer{
+  padding: 10px;
+}
+
+
+
 
 
 @media screen and (max-width: 1024px) {
