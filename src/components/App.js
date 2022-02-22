@@ -1,7 +1,9 @@
 // Para incluir los diferentes sets de cartas podemos _importar_ el archivo
 // JavasSript que contenga el `export` correspondiente...
 //
+
 import pokemon from '../data/pokemon/pokemon.js';
+
 
 let data = pokemon;
 console.log(pokemon)
@@ -28,6 +30,7 @@ const generateBoard = () =>{
             //   items.splice( 0, 1)
       //console.log(data.items[i].image);
       //console.log(data.items[i].id);
+
     }
     data.items.sort(() =>Math.random()-0.5)
     items.innerHTML = cards.join("")
@@ -39,7 +42,7 @@ const generateBoard = () =>{
   export {generateBoard}
 
 
-
+  
 
   //   function selectCard(i) {
   //     let card = document.getElementById("card" + i)

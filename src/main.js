@@ -1,3 +1,4 @@
+
 import  {generateBoard} from './components/App.js';
 document.getElementById('screen-two').appendChild(generateBoard())
 
@@ -17,8 +18,10 @@ function playGame() {
   }
 };
 
-let card = document.getElementById('containerCard')
-card.addEventListener('click', (e) => {
-  card.classList.toggle('toggleCard');
+document.querySelectorAll('.container-card').forEach(item => {
+  item.addEventListener('click', event => {
+    item.classList.toggle('toggleCard');
+  })
 })
+
 
