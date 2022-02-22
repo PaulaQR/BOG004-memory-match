@@ -21,7 +21,7 @@ const generateBoard = () =>{
               <img src="${data.items[i].image}" alt="pokemon-${i}"/>
             </div>
             <div class='front'>
-              <img src="./images/front.png" alt="front"/>
+              <img src="./images/frontcard.png" alt="front"/>
             </div>
             
           </div>
