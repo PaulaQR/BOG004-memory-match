@@ -58,6 +58,7 @@ header h1{
   color: #80547B;
   border-style: none;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
 }
 
 /* Segunda pantalla */
@@ -66,28 +67,52 @@ header h1{
   margin: 50px;
 }
 
+.section{
+  perspective: 800px;
+}
+
 .container-card{
-  background-color:aliceblue;
-  border-radius: 20px;
   display: inline-grid;
   margin: 10px 10px 10px 10px;
   cursor: pointer;
   height: 130px;
   width: 130px;
-  align-content: center;
+  position: relative;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  transition: transform 2s ease;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+
 }
 
 .container-card img{
   width: 100px;
   height: 100px;
+  margin-top: 13px;
+}
+
+.front, .back {
+ height: 130px;
+ width: 130px;
+ position: absolute;
 }
 
 .front{
-  display: block;
+  background-color: #143A3F;
+  border-radius: 20px;
+  align-content: center;
+  backface-visibility: hidden;
 }
 
 .back{
-  display: none;
+  background-color: aliceblue;
+  border-radius: 20px;
+  align-content: center;
+  
+}
+
+.toggleCard{
+  transform: rotateY(180deg);
 }
 
 

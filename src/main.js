@@ -13,7 +13,12 @@ function playGame() {
   if(screen1.style.display == 'block'){
     screen1.style.display = 'none';
     screen2.style.display = 'block';
-    screen3.style.displya = 'none';
+    screen3.style.display = 'none';
   }
 };
+
+let card = document.getElementById('containerCard')
+card.addEventListener('click', (e) => {
+  card.classList.toggle('toggleCard');
+})
 

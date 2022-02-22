@@ -14,28 +14,31 @@ const generateBoard = () =>{
       for(let i = 0; i < 9; i ++){
       
         cards.push(`
-          <div id='container-card' class='container-card'>
+          <div id='containerCard' class='container-card'>
             <div class= 'back'>
               <img src="${data.items[i].image}" alt="pokemon-${i}"/>
             </div>
             <div class='front'>
-              <img src="./images/pokebola.png" alt="front"/>
+              <img src="./images/front.png" alt="front"/>
             </div>
             
           </div>
         `)
           // if (i % 2 == 1) {
             //   items.splice( 0, 1)
-      console.log(data.items[i].image)
-      console.log(data.items[i].id)
+      //console.log(data.items[i].image);
+      //console.log(data.items[i].id);
     }
     data.items.sort(() =>Math.random()-0.5)
     items.innerHTML = cards.join("")
   }
+ 
   return items
 }
   generateBoard();
   export {generateBoard}
+
+
 
 
   //   function selectCard(i) {
@@ -65,9 +68,3 @@ const generateBoard = () =>{
   //           }
   //         }, 1000);
   //       }
-      
-        
-
-
-
-
