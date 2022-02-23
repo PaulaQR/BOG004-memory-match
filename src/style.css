@@ -73,14 +73,14 @@ header h1{
 .screen-two section{
   perspective: 800px; 
   margin: 20px 20px;
-  /* display: grid;
+  display: grid;
   grid-template-columns: repeat(6, 1fr);
-  margin-bottom: 20px; */
+  margin-bottom: 20px;
 
 }
 
 .container-card{
-  display: inline-grid;
+  /* display: inline-grid; */
   margin: 10px 10px 10px 10px;
   cursor: pointer;
   height: 130px;
