@@ -5,9 +5,10 @@
 }
 
 body {
-  
   background-color: #143A3F;
+  padding: 1px;
   text-align: center;
+  justify-content: center;
   font-family: 'Raleway', sans-serif;
   color: white;
 
@@ -17,7 +18,7 @@ body {
   background-color: #80547B;
   width: 80%;
   height: auto;
-  margin: 80px auto 30px auto;
+  margin: 50px auto 10px auto;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -36,12 +37,14 @@ header h1{
 }
 
 .container-button {
-  display: flex;
-  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 40px;
+  margin-bottom: auto;
 }
 
 .container-image{
-  width: 250px;
+  width: 300px;
   
 }
 
@@ -64,11 +67,16 @@ header h1{
 /* Segunda pantalla */
 
 .screen-two{ 
-  margin: 50px;
+  margin: 20px 20px;
 }
 
-.section{
-  perspective: 800px;
+.screen-two section{
+  perspective: 800px; 
+  margin: 20px 20px;
+  /* display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 20px; */
+
 }
 
 .container-card{
@@ -83,7 +91,7 @@ header h1{
   transition: transform 2s ease;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
 
-}
+} 
 
 .container-card img{
   width: 100px;
@@ -95,6 +103,7 @@ header h1{
  height: 130px;
  width: 130px;
  position: absolute;
+ pointer-events: none;
 }
 
 .front{
@@ -184,4 +193,4 @@ header h1{
   }
 
   
-} 
+}  */

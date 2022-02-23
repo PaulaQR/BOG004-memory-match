@@ -14,11 +14,36 @@ playButton.addEventListener('click', () => {
 
 //FLIP EFFECT
 document.querySelectorAll('.container-card').forEach(item => {
-  item.addEventListener('click', event => {
+  item.addEventListener('click', (e) => {
     item.classList.toggle('toggleCard');
+    checkCards(e);
   })
 })
 
+//CHECK CARDS
+const checkCards = (e) => {
+  console.log(e);
+  const clickedCard = e.target;
+  clickedCard.classList.add('flipped');
+  // ya logramos identificar la carta al click y "cambiar" su clase//
+  // sigue la lógica para ver si son iguales
 
+  const flippedCards = document.querySelectorAll('.flipped');
+  if(flippedCards.length === 2){
+    if(flippedCards[0].getAttribute('name') === flippedCards[1].getAttribute('name')){
+      console.log('match');
+      flippedCards.forEach(item => {
+        item.classList.remove('flipped');
+        item.style.pointerEvents = 'none';
+      })
+    }else {
+      console.log('wrong');
+      flippedCards.forEach(item => {
+        item.classList.remove('flipped');
+        setTimeout(() => item.classList.remove('toggleCard'),2000);
+      })
+    }
+  }
+}
 
 
