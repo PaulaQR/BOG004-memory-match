@@ -18,7 +18,7 @@ playButton.addEventListener('click', () => {
 document.querySelectorAll('.container-card').forEach(item => { 
   //para cada item(carta), al hacer click sucede un evento
   item.addEventListener('click', (e) => {
-    //al hacer click la carta tiene una clase de 'toggle card': efecto para voltear
+    //al hacer click la carnta tiene una clase de 'toggle card': efecto para voltear
     item.classList.toggle('toggleCard');
 
     //al mismo tiempo hace la funcion checkCards
@@ -27,9 +27,11 @@ document.querySelectorAll('.container-card').forEach(item => {
 })
 
 //CHECK CARDS
+let totalDuos = 0;
 const checkCards = (e) => {
-  console.log(e);
+  
   const clickedCard = e.target;
+  console.log(clickedCard);
   clickedCard.classList.add('flipped');
   // ya logramos identificar la carta al click y "cambiar" su clase//
   // sigue la lógica para ver si son iguales
@@ -43,15 +45,28 @@ const checkCards = (e) => {
         item.classList.remove('flipped');
         item.style.pointerEvents = 'none';
       })
-    }else {
+    totalDuos++;
+    if(totalDuos === 1){ 
+      document.getElementById('screen-one').style.display = 'none',
+      document.getElementById('screen-two').style.display = 'none',
+      document.getElementById('screen-three').style.display = 'block';
+    };
+    }
+    else {
       console.log('wrong');
       flippedCards.forEach(item => {
         item.classList.remove('flipped');
         setTimeout(() => 
         item.classList.remove('toggleCard'),1500);
-      })
+      });
     }
   }
+  console.log(totalDuos)
 }
 
 
+// //END GAME 
+// function endGame(
+// document.getElementById('screen-one').style.display = 'none';
+// document.getElementById('screen-two').style.display = 'none';
+// document.getElementById('screen-three').style.display = 'block';)
