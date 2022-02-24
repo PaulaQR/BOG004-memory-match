@@ -21,7 +21,7 @@ const generateBoard = () =>{
               <img src="${data.items[i].image}" alt='pokemon-${i}'/>
             </div>
             <div class='front'>
-              <svg width="173" height="126" viewBox="0 0 173 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="170" height="120" viewBox="0 0 173 126" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="124.625" height="171.935" rx="18.9262" transform="matrix(-0.000796218 -1 1 -0.000810979 0.0992279 125.689)" fill="#143A3F"/>
                 <ellipse cx="85.9227" cy="62.9777" rx="39.4141" ry="39.7778" fill="white"/>
               </svg>

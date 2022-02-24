@@ -15,7 +15,7 @@ body {
 
 .main-container {
   background-color: #80547B;
-  width: 95%;
+  width: 97%;
   height: auto;
   margin: 80px auto 30px auto;
   border-radius: 20px;
@@ -59,7 +59,7 @@ header h1 {
   font-size: 15pt;
   font-weight: 800;
   letter-spacing: 0.3cm;
-  color: #143a3f;
+  color: #80547B;
   background-color: aliceblue;
   border-style: none;
   cursor: pointer;
@@ -83,6 +83,7 @@ button:active{
 }
 
 .container-card {
+  
   position: relative;
   cursor: pointer; 
   width: 10rem;
@@ -93,7 +94,7 @@ button:active{
 }
 
 .container-card img {
-  margin-top: 10px;
+  
   width: 100px;
   height: 100px;
 }
@@ -106,6 +107,7 @@ button:active{
 
 
 .front {
+  
   pointer-events: none;
   background-color: #143a3f;
   border-radius: 20px;
@@ -115,8 +117,8 @@ button:active{
 
 .back {
   pointer-events: none;
-  width: 173px;
-  height: 126px;
+  width: 170px;
+  height: 120px;
   background-color: aliceblue;
   border-radius: 20px;
   align-content: center;
