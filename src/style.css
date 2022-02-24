@@ -14,17 +14,10 @@ body {
 }
 
 .main-container {
-<<<<<<< HEAD
-  background-color: #966890;
-  width: 80%;
-  height: 60%;
-  margin: 50px auto 10px auto;
-=======
   background-color: #80547B;
-  width: 60%;
+  width: 95%;
   height: auto;
   margin: 80px auto 30px auto;
->>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -56,11 +49,7 @@ header h1 {
   width: 300px;
 }
 
-<<<<<<< HEAD
-.playButton {
-=======
 .playButton{
->>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
   height: 60px;
   width: 250px;
   margin: 10px auto;
@@ -70,11 +59,10 @@ header h1 {
   font-size: 15pt;
   font-weight: 800;
   letter-spacing: 0.3cm;
-  color: #80547b;
+  color: #143a3f;
   background-color: aliceblue;
   border-style: none;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
 }
 
 button:hover{
@@ -90,7 +78,7 @@ button:active{
   perspective: 800px; 
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 0.2rem;
+  grid-gap: 2.5rem;
   margin-bottom: 20px;
 }
 
@@ -99,13 +87,13 @@ button:active{
   cursor: pointer; 
   width: 10rem;
   height: 7.5rem;
-  border-radius: 20px;
+  border-radius: 15px;
   transform-style: preserve-3d;
-  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .container-card img {
- 
+  margin-top: 10px;
   width: 100px;
   height: 100px;
 }
@@ -116,56 +104,20 @@ button:active{
   cursor: pointer;
 }
 
-<<<<<<< HEAD
+
 .front {
   pointer-events: none;
   background-color: #143a3f;
   border-radius: 20px;
   align-content: center;
   backface-visibility: hidden;
-=======
-/* Segunda pantalla */
-
-  section .screen-two{
-    width: 124.63px;
-    height: 171.93px;
-    margin-top: 5px;
-    margin-bottom: 1px;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-.container-card{
-  background-color: #316E76;
-  width: 90%;
-  height: auto ;
-  margin: 80px auto 30px auto;
-  border-radius: 20px;
-
-  
-}
-
-.container-card img{
-  align-items: center;
-  width: 60px;
-}
-
-
-
-
-
-
-@media screen and (max-width: 1024px) {
- 
->>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
 }
 
 .back {
   pointer-events: none;
-  width: 130px;
-  height: 100px;
+  width: 173px;
+  height: 126px;
   background-color: aliceblue;
-
   border-radius: 20px;
   align-content: center;
 }
@@ -193,11 +145,7 @@ button:active{
   }
 }
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
 @media screen and (max-width: 425px) {
   .container-image {
     width: 130px;
@@ -218,8 +166,6 @@ button:active{
   }
 }
 
-<<<<<<< HEAD
-=======
 .card-container{
   display: flex; 
   flex-wrap: wrap;
@@ -227,8 +173,6 @@ button:active{
   width: 400px;
 }
 
-
->>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
 @media screen and (max-width: 320px) {
   .container-image {
     width: 100px;
@@ -249,9 +193,3 @@ button:active{
   }
 }
 
-
-<<<<<<< HEAD
-=======
-  
-} 
->>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8

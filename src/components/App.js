@@ -4,10 +4,7 @@
 
 import pokemon from '../data/pokemon/pokemon.js';
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
 let data = pokemon;
 console.log(pokemon)
 //Generate Board 
@@ -19,13 +16,12 @@ const generateBoard = () =>{
       for(let i = 0; i < 9; i ++){
       
         cards.push(`
-<<<<<<< HEAD
-          <div id="container-card" class='container-card' name='${data.items[i].id}'>
+          <div id='containerCard' class='container-card' name='${data.items[i].id}'>
             <div class= 'back'>
               <img src="${data.items[i].image}" alt='pokemon-${i}'/>
             </div>
             <div class='front'>
-              <svg width="140" height="100" viewBox="0 0 173 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="173" height="126" viewBox="0 0 173 126" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="124.625" height="171.935" rx="18.9262" transform="matrix(-0.000796218 -1 1 -0.000810979 0.0992279 125.689)" fill="#143A3F"/>
                 <ellipse cx="85.9227" cy="62.9777" rx="39.4141" ry="39.7778" fill="white"/>
               </svg>
@@ -38,42 +34,19 @@ const generateBoard = () =>{
       //console.log(data.items[i].image);
       //console.log(data.items[i].id);
 
-=======
-          <div class='container-card'(${i})'>
-          <div class="card" id="card${i}">
-          <div class="back" id="back${i}">
-          <img src="${data.items[i].image}" alt="pokemon"/>
-          </div>
-          </div>
-          <div class="face">
-                </div>
-              </div>
-            </div>
-        `)
-          // if (i % 2 == 1) {
-            //   items.splice( 0, 1)
-      console.log(data.items[i].image)
-      console.log(data.items[i].id)
->>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
     }
     data.items.sort(() =>Math.random()-0.5)
     items.innerHTML = cards.join("")
   }
-<<<<<<< HEAD
  
-=======
->>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
   return items
 }
   generateBoard();
   export {generateBoard}
 
 
-<<<<<<< HEAD
   
 
-=======
->>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
   //   function selectCard(i) {
   //     let card = document.getElementById("card" + i)
   //     if (card.style.transform != "rotateY(180deg)") {
@@ -100,14 +73,4 @@ const generateBoard = () =>{
   //             back2.style.background = "turn"
   //           }
   //         }, 1000);
-<<<<<<< HEAD
   //       }
-=======
-  //       }
-      
-        
-
-
-
-
->>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
