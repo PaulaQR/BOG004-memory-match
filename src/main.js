@@ -27,6 +27,7 @@ document.querySelectorAll('.container-card').forEach(item => {
 })
 
 //CHECK CARDS
+// se inicializa la funcion que cuenta la cantidad de pares encontrados (totalDuos)
 let totalDuos = 0;
 const checkCards = (e) => {
   
@@ -45,28 +46,36 @@ const checkCards = (e) => {
         item.classList.remove('flipped');
         item.style.pointerEvents = 'none';
       })
+    //cada vez que se encuentra un par se suma 1 al score totalDuos
     totalDuos++;
-    if(totalDuos === 1){ 
-      document.getElementById('screen-one').style.display = 'none',
-      document.getElementById('screen-two').style.display = 'none',
-      document.getElementById('screen-three').style.display = 'block';
-    };
-    }
+    // si el score llega a 9 se ejecuta la funcion endGame
+    if (totalDuos === 1) {
+      setTimeout(endGame,3000)
+    }}
     else {
       console.log('wrong');
       flippedCards.forEach(item => {
         item.classList.remove('flipped');
         setTimeout(() => 
-        item.classList.remove('toggleCard'),1500);
+        item.classList.remove('toggleCard'),1400);
       });
     }
   }
   console.log(totalDuos)
 }
 
+// //END GAME : funcion para mostrar la tercera pantalla 
+function endGame(){
+document.getElementById('screen-one').style.display = 'none',
+document.getElementById('screen-two').style.display = 'none',
+document.getElementById('screen-three').style.display = 'block'}
 
-// //END GAME 
-// function endGame(
-// document.getElementById('screen-one').style.display = 'none';
-// document.getElementById('screen-two').style.display = 'none';
-// document.getElementById('screen-three').style.display = 'block';)
+//PLAY AGAIN : se regresa a la primera pantalla
+function playAgain(){
+  location.reload(),
+  document.getElementById('screen-one').style.display = 'block',
+  document.getElementById('screen-two').style.display = 'none',
+  document.getElementById('screen-three').style.display = 'none';
+}
+const playAgainButton = document.getElementById('playAgainButton');
+playAgainButton.addEventListener('click', () => { playAgain()})
