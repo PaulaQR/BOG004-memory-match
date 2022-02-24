@@ -4,7 +4,10 @@
 
 import pokemon from '../data/pokemon/pokemon.js';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
 let data = pokemon;
 console.log(pokemon)
 //Generate Board 
@@ -16,6 +19,7 @@ const generateBoard = () =>{
       for(let i = 0; i < 9; i ++){
       
         cards.push(`
+<<<<<<< HEAD
           <div id="container-card" class='container-card' name='${data.items[i].id}'>
             <div class= 'back'>
               <img src="${data.items[i].image}" alt='pokemon-${i}'/>
@@ -34,19 +38,42 @@ const generateBoard = () =>{
       //console.log(data.items[i].image);
       //console.log(data.items[i].id);
 
+=======
+          <div class='container-card'(${i})'>
+          <div class="card" id="card${i}">
+          <div class="back" id="back${i}">
+          <img src="${data.items[i].image}" alt="pokemon"/>
+          </div>
+          </div>
+          <div class="face">
+                </div>
+              </div>
+            </div>
+        `)
+          // if (i % 2 == 1) {
+            //   items.splice( 0, 1)
+      console.log(data.items[i].image)
+      console.log(data.items[i].id)
+>>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
     }
     data.items.sort(() =>Math.random()-0.5)
     items.innerHTML = cards.join("")
   }
+<<<<<<< HEAD
  
+=======
+>>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
   return items
 }
   generateBoard();
   export {generateBoard}
 
 
+<<<<<<< HEAD
   
 
+=======
+>>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
   //   function selectCard(i) {
   //     let card = document.getElementById("card" + i)
   //     if (card.style.transform != "rotateY(180deg)") {
@@ -73,4 +100,14 @@ const generateBoard = () =>{
   //             back2.style.background = "turn"
   //           }
   //         }, 1000);
+<<<<<<< HEAD
   //       }
+=======
+  //       }
+      
+        
+
+
+
+
+>>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8

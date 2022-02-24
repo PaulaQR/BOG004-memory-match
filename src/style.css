@@ -14,10 +14,17 @@ body {
 }
 
 .main-container {
+<<<<<<< HEAD
   background-color: #966890;
   width: 80%;
   height: 60%;
   margin: 50px auto 10px auto;
+=======
+  background-color: #80547B;
+  width: 60%;
+  height: auto;
+  margin: 80px auto 30px auto;
+>>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -49,7 +56,11 @@ header h1 {
   width: 300px;
 }
 
+<<<<<<< HEAD
 .playButton {
+=======
+.playButton{
+>>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
   height: 60px;
   width: 250px;
   margin: 10px auto;
@@ -105,12 +116,48 @@ button:active{
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 .front {
   pointer-events: none;
   background-color: #143a3f;
   border-radius: 20px;
   align-content: center;
   backface-visibility: hidden;
+=======
+/* Segunda pantalla */
+
+  section .screen-two{
+    width: 124.63px;
+    height: 171.93px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.container-card{
+  background-color: #316E76;
+  width: 90%;
+  height: auto ;
+  margin: 80px auto 30px auto;
+  border-radius: 20px;
+
+  
+}
+
+.container-card img{
+  align-items: center;
+  width: 60px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+ 
+>>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
 }
 
 .back {
@@ -146,6 +193,11 @@ button:active{
   }
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
 @media screen and (max-width: 425px) {
   .container-image {
     width: 130px;
@@ -166,6 +218,17 @@ button:active{
   }
 }
 
+<<<<<<< HEAD
+=======
+.card-container{
+  display: flex; 
+  flex-wrap: wrap;
+  height: 300px;
+  width: 400px;
+}
+
+
+>>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8
 @media screen and (max-width: 320px) {
   .container-image {
     width: 100px;
@@ -187,3 +250,8 @@ button:active{
 }
 
 
+<<<<<<< HEAD
+=======
+  
+} 
+>>>>>>> 7d449352bbde48a75706aa70ebfcb97185d23ba8

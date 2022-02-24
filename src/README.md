@@ -1,4 +1,4 @@
-<img src="./images/prototype.png">
+<img src="./images/README.png">
 
 # M E M O R Y M A T C H - P O K E M O N
 
