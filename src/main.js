@@ -30,7 +30,6 @@ document.querySelectorAll('.container-card').forEach(item => {
 // se inicializa la funcion que cuenta la cantidad de pares encontrados (totalDuos)
 let totalDuos = 0;
 const checkCards = (e) => {
-  
   const clickedCard = e.target;
   console.log(clickedCard);
   clickedCard.classList.add('flipped');
@@ -49,7 +48,7 @@ const checkCards = (e) => {
     //cada vez que se encuentra un par se suma 1 al score totalDuos
     totalDuos++;
     // si el score llega a 9 se ejecuta la funcion endGame
-    if (totalDuos === 1) {
+    if (totalDuos === 9) {
       setTimeout(endGame,3000)
     }}
     else {
