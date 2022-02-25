@@ -6,7 +6,6 @@
 
 body {
   background-color: #143a3f;
-  padding: 1px;
   text-align: center;
   justify-content: center;
   font-family: "Raleway", sans-serif;
@@ -17,7 +16,7 @@ body {
   background-color: #80547B;
   width: 97%;
   height: auto;
-  margin: 80px auto 30px auto;
+  margin: 15px auto 30px auto;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -55,22 +54,21 @@ header h1 {
   margin: 10px auto;
   margin: auto 0;
   border-radius: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15pt;
   font-weight: 800;
   letter-spacing: 0.3cm;
-  color: #80547B;
-  background-color: aliceblue;
+  color: #ffffff;
+  background-color: rgb(44, 65, 83);
   border-style: none;
   cursor: pointer;
 }
 
 button:hover{
-  background-color: rgb(255, 245, 158) ;
+  background-color: #143a3f ;
 }
 
 button:active{
-  background-color: #f5f5f5;
+  background-color: #1691a1;
 }
 
 .screen-two section {
@@ -128,6 +126,46 @@ button:active{
   transform: rotateY(180deg);
 }
 
+.screen-three{
+  width: 100%;
+}
+
+.screen-three h2 {
+  padding: 30px;
+  margin: 0%;
+  letter-spacing: 15px;
+  line-height: 30px;
+  font-size: 30px;
+}
+
+.playButton2{
+  align-items: center;
+  margin: 100px 0;
+  width: 290px;
+  height: 60px;
+  padding: 0%;
+  border-radius: 20px;
+  font-size: 15pt;
+  font-weight: 800;
+  letter-spacing: 0.3cm;
+  color: #ffffff;
+  background-color: rgb(44, 65, 83);
+  border-style: none;
+  cursor: pointer;
+}
+
+.screen-three img{
+  width: 250px;
+}
+
+footer img{
+  
+   width: 200px;
+}
+
+
+
+
 @media screen and (max-width: 1024px) {
 }
 
@@ -154,7 +192,7 @@ button:active{
   }
 
   .play-button {
-    width: 100px;
+    width: 90px;
     height: 40px;
     letter-spacing: 5px;
     font-size: 13px;
@@ -171,9 +209,11 @@ button:active{
 .card-container{
   display: flex; 
   flex-wrap: wrap;
-  height: 300px;
+  height: 200px;
   width: 400px;
 }
+
+
 
 @media screen and (max-width: 320px) {
   .container-image {

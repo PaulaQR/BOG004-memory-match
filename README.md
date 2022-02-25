@@ -1,5 +1,8 @@
 * [IR AL DESPLIEGUE](https://paulaqr.github.io/BOG004-memory-match/) - LISTO PARA JUGAR
 
+
+_Prototipo final centrandonos en las historias de usuario_ 
+
 <img src="./README.png">
 
 # M E M O R Y M A T C H - P O K E M O N
