@@ -4,18 +4,24 @@
   box-sizing: border-box;
 }
 
+html{
+  box-sizing: border-box; /*Cuando agregemos un width a un elemento y luego se añada un padding, no modifique el tamaño del elemento */
+  font-size: 62.5%; /*corresponde a 10px el elemento raiz*/
+}
+
 body {
   background-color: #143a3f;
   text-align: center;
   justify-content: center;
   font-family: "Raleway", sans-serif;
   color: white;
+  height: 100vh;
 }
 
 .main-container {
   background-color: #80547B;
-  width: 97%;
-  height: auto;
+  width: 80%;
+  height: 90vh;
   margin: 15px auto 30px auto;
   border-radius: 20px;
   display: flex;
@@ -85,14 +91,13 @@ button:active{
   position: relative;
   cursor: pointer; 
   width: 10rem;
-  height: 7.5rem;
+  height: 12rem;
   border-radius: 15px;
   transform-style: preserve-3d;
   transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .container-card img {
-  
   width: 100px;
   height: 100px;
 }
@@ -115,11 +120,15 @@ button:active{
 
 .back {
   pointer-events: none;
-  width: 170px;
+  width: 100px;
   height: 120px;
   background-color: aliceblue;
   border-radius: 20px;
   align-content: center;
+}
+
+.back img{
+  width: 80px;
 }
 
 .toggleCard {
@@ -168,7 +177,20 @@ footer img{
 @media screen and (max-width: 1024px) {
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+
+  .main-container {
+    width: 95%;
+    height: 100vh;
+  }
+
+  .container-card {
+    width: 12rem;
+    height: 11rem;
+    
+  }
+  
+
   .container-image {
     width: 200px;
   }
@@ -182,55 +204,111 @@ footer img{
   h2 {
     font-size: 25px;
   }
+
+  .screen-two section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .container-card:nth-child(17){
+    grid-column: 2 / 3;
+
+  }
+  .container-card:nth-child(18){
+    grid-column: 3 / 5;
+   
+  }
+
 }
 
 
-@media screen and (max-width: 425px) {
-  .container-image {
-    width: 130px;
+@media screen and (max-width: 576px) {
+  .main-container {
+    width: 90%;
+    height: 100vh;
+    
   }
 
-  .play-button {
-    width: 90px;
-    height: 40px;
-    letter-spacing: 5px;
-    font-size: 13px;
-    margin-right: 25px;
+  .back {
+    width: 70px;
+    height: 80px;
+  }
+  
+  .back img{
+    width: 30px;
+    height: 10px;
   }
 
-  header h1,
-  h2 {
-    font-size: 20px;
-    letter-spacing: 5px;
+  .front svg{
+    width: 70px;
+    height: 80px;
   }
+
+  .container-card {
+    width: 7rem;
+    height: 9rem;
+    
+  }
+  
+  .container-card img {
+    width: 55px;
+    height: 80px;
+  }
+  
+  
+  .screen-two section {
+    grid-gap: 2rem;
+  }
+
+
 }
-
-.card-container{
-  display: flex; 
-  flex-wrap: wrap;
-  height: 200px;
-  width: 400px;
-}
-
-
 
 @media screen and (max-width: 320px) {
-  .container-image {
-    width: 100px;
+  .main-container {
+    width: 95%;
+    height: 100vh;
   }
 
-  .screen-one button {
-    width: 80px;
-    height: 30px;
-    letter-spacing: 5px;
-    font-size: 13px;
-    margin-right: 25px;
+  .back {
+    width: 60px;
+    height: 70px;
+  }
+  
+  .back img{
+    width: 20px;
+    height: 10px;
   }
 
-  header h1,
-  h2 {
-    font-size: 15px;
-    letter-spacing: 5px;
+  .front svg{
+    width: 60px;
+    height: 70px;
   }
+
+  .container-card {
+    width: 6rem;
+    height: 8rem;
+    
+  }
+  
+  .container-card img {
+    width: 40px;
+    height: 70px;
+  }
+  
+  
+  .screen-two section {
+    grid-gap: 2rem;
+  }
+
+  .screen-two section {
+    grid-gap: 1rem;
+    margin-bottom: 20px;
+  }
+
 }
+
+
+
 
