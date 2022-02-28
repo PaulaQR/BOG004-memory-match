@@ -16,7 +16,7 @@ test('multiply our data', () => {
 });
 
 
-test('two plus two is four', () => {
+test('increase match', () => {
   expect(2 + 2).toBe(4);
 });
 })
