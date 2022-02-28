@@ -13,11 +13,11 @@ playButton.addEventListener('click', () => {
 
 //FLIP EFFECT
 //Usamos selector para todas las tarjetas que tienen la clase "container-card"
-//usamos un loop foreach, recordando que son varios 'container-card'
+//usamos un loop for each, recordando que son varios 'container-card'
 document.querySelectorAll('.container-card').forEach(item => { 
   //para cada item(carta), al hacer click sucede un evento
   item.addEventListener('click', (e) => {
-    //al hacer click la carnta tiene una clase de 'toggle card': efecto para voltear
+    //al hacer click la carta tiene una clase de 'toggle card': efecto para voltear
     item.classList.toggle('toggleCard');
 
     //al mismo tiempo hace la funcion checkCards
@@ -26,13 +26,13 @@ document.querySelectorAll('.container-card').forEach(item => {
 })
 
 //CHECK CARDS
-// se inicializa la funcion que cuenta la cantidad de pares encontrados (totalDuos)
-let totalDuos = 0;
+// se inicializa la funcion que cuenta la cantidad de pares encontrados (totalMatch)
+let totalMatch = 0;
 const checkCards = (e) => {
   const clickedCard = e.target;
   console.log(clickedCard);
   clickedCard.classList.add('flipped');
-  // ya logramos identificar la carta al click y "cambiar" su clase//
+  // ya logramos identificar la carta al click y "cambiar" su clase
   // sigue la lógica para ver si son iguales
 
   //primero usamos selector para todas las tarjetas que tienen la clase "flipped"
@@ -45,9 +45,9 @@ const checkCards = (e) => {
         item.style.pointerEvents = 'none';
       })
     //cada vez que se encuentra un par se suma 1 al score totalDuos
-    totalDuos++;
+    totalMatch++;
     // si el score llega a 9 se ejecuta la funcion endGame
-    if (totalDuos === 1) {
+    if (totalMatch === 1) {
       setTimeout(endGame,1000)
     }}
     else {
@@ -59,7 +59,7 @@ const checkCards = (e) => {
       });
     }
   }
-  console.log(totalDuos)
+  console.log(totalMatch)
 }
 
 // //END GAME : funcion para mostrar la tercera pantalla 
@@ -75,5 +75,6 @@ function playAgain(){
   document.getElementById('screen-two').style.display = 'none',
   document.getElementById('screen-three').style.display = 'none';
 }
+
 const playAgainButton = document.getElementById('play-again');
 playAgainButton.addEventListener('click', () => { playAgain()})
