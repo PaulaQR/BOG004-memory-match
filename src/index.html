@@ -7,39 +7,36 @@
     <title>Memory Match - Game</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    
   </head>
   <body> 
     
     <main class="main-container">
-      <section id="screen-one" class="screen-one" style="display: block;">
+
       <header>
-        <h1>MEMORY MATCH</h1>
-        <h2>POKEMON</h2>
+        <h1>MEMORY MATCH POKEMON</h1>
       </header> 
-      
-       <section  class="container-button">
-            
-          <img class= "container-image" src="./images/picachu_principal.png" alt="imagen-picachu">
+      <section id="screen-one" class="screen-one">
+        <section class="container-button">
+          <img class= "container-image" src="./images/picachu_principal.png" alt="ImgPokemon">
           <button type="button"  class="playButton" id="playButton"> Play </button>    
-          </section>
+        </section>
       </section>
-
-      <section id="screen-two" class="screen-two" style="display: none" >  
-       <h1>MEMORY MATCH</h1>
-        <h3>POKEMON</h3>
-    </section> 
-    
-    
-  <section id="screen-three" class="screen-three" style="display: none" >  
-    <div id="end-container">
-      <p id="won-lost"></p>
-    </div>
-    <button type="submit" class="play-again" id="play-button"> VOLVER A JUGAR </button>
-  </section> 
-  
+      <!-- ROOT -->
+      <section id="screen-two" class="screen-two">  
+      </section> 
+      
+      
+      <section id="screen-three" class="screen-three">  
+        <img src="./images/pokemon_final.png" alt="ImgPokemon">
+          <h2 id="won-lost">You Win!</h2>
+          <button type="submit" class="playButton2" id="play-again">PLAY AGAIN! </button>
+        </section> 
+      
     </main>
-
+    
     <footer>
+      <img src="./images/pokemon_intermedio.png" alt="ImgPokemon">
       <p>Made by Roxy Solano and Paula Quintero </p>
     </footer>
     <script src="main.js" type="module"></script>
